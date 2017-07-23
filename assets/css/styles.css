@@ -26,7 +26,8 @@ h6 {
   font-weight: 700;
 }
 a {
-  color: #2d7788;
+  /*color: #2d7788;*/
+  color: #3973ac;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -52,10 +53,11 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .sidebar-wrapper {
-  background: #42A8C0;
+  /*background: #2d7788;*/
+  background: #3973ac;
   position: absolute;
   right: 0;
-  width: 240px;
+  width: 250px;
   height: 100%;
   min-height: 800px;
   color: #fff;
@@ -84,8 +86,8 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 18px;
-  border-radius: 50%
-  
+  border-radius: 50%;
+  box-shadow: 0px 0px 9px black;
 }
 .sidebar-wrapper .contact-list .fa {
   margin-right: 5px;
@@ -160,6 +162,7 @@ p {
   padding: 30px;
   padding-right: 280px;
   padding-left: 40px;
+  box-shadow: -4px -4px 9px #bfbfbf;
   /*padding-left: 40px;
   margin-left: 240px;*/
 }
@@ -167,7 +170,8 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #2d7788;
+  /*color: #2d7788;*/
+  color: #3973ac;
   position: relative;
   margin-top: 0;
   margin-bottom: 15px;
@@ -175,7 +179,8 @@ p {
 #TITLE {
   font-size: 33px;
   font-weight: 500;
-  color: #2d7788;
+  /*color: #2d7788;*/
+  color: #3973ac;
   position: relative;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -184,7 +189,8 @@ p {
 #SUBTITLE {
   font-size: 15px;
   font-weight: 500;
-  color: #2d7788;
+  /*color: #2d7788;*/
+  color: #3973ac;
   position: relative;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -204,7 +210,8 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #2d7788;
+  /*background: #2d7788;*/
+  background: #3973ac;
   text-align: center;
   padding-top: 8px;
   font-size: 16px;
@@ -266,7 +273,8 @@ p {
 }
 .skillset .level-bar-inner {
   height: 12px;
-  background: #7bc2d3;
+  /*background: #7bc2d3;*/
+  background: #3973ac;
 }
 .footer {
   padding: 30px;
