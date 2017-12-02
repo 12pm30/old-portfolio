@@ -25,24 +25,22 @@
 <body>
 <div id="container">
     <video autoplay="true" id="videoElement">
-     
-	</video>
+    </video>
 </div>
 <input id="clickMe" type="button" value="Take my Photo!" onclick="takepicture();" />
 <canvas id="canvas">
   </canvas>
 <script>
 	function takepicture() {
+	    video = document.getElementById('videoElement');
+    	    canvas = document.getElementById('canvas');
+    	    photo = document.getElementById('photo');
 	    var context = canvas.getContext('2d');
 	    var width = 320;    // We will scale the photo width to this
-  var height = 0;     // This will be computed based on the input stream
-
-  var streaming = false;
-
-  var video = null;
-  var canvas = null;
-  var photo = null;
-  var startbutton = null;
+  	    var height = 0;     // This will be computed based on the input stream
+	    var streaming = false;
+	    var video = null;
+  	    var photo = null;
 	    if (width && height) {
 	      canvas.width = width;
 	      canvas.height = height;
@@ -56,16 +54,16 @@
 	  }
 	
 	function clearphoto() {
+		video = document.getElementById('videoElement');
+    		canvas = document.getElementById('canvas');
+    		photo = document.getElementById('photo');
     		var context = canvas.getContext('2d');
 		var width = 320;    // We will scale the photo width to this
-  var height = 0;     // This will be computed based on the input stream
-
-  var streaming = false;
-
-  var video = null;
-  var canvas = null;
-  var photo = null;
-  var startbutton = null;
+  		var width = 320;    // We will scale the photo width to this
+  	    	var height = 0;     // This will be computed based on the input stream
+	    	var streaming = false;
+	    	var video = null;
+  	    	var photo = null;
     		context.fillStyle = "#AAA";
     		context.fillRect(0, 0, canvas.width, canvas.height);
 		
