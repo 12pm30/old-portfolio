@@ -33,6 +33,7 @@
   <div class="output">
     <img id="photo" alt="The screen capture will appear in this box.">
   </div>
+<script src="http://hongru.github.io/proj/canvas2image/canvas2image.js"></script>
 <script>
 	function takepicture() {
 	    var video = document.getElementById('videoElement');
@@ -47,8 +48,8 @@
 	      canvas.height = height;
 	      context.drawImage(video, 0, 0, width, height);
 	      var data = canvas.toDataURL('image/png');
-	      var data_ = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
-	      window.location.href=data_; // it will save locally
+	      var canvas = document.getElementById("thecanvas");
+              Canvas2Image.saveAsPNG(canvas);
 	    } else {
 	      clearphoto();
 	    }
