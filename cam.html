@@ -26,9 +26,11 @@
 <div id="container">
     <video autoplay="true" id="videoElement">
      
-    </video>
-    <input id="clickMe" type="button" value="Take my Photo!" onclick="takepicture();" />
+	</video>
 </div>
+<input id="clickMe" type="button" value="Take my Photo!" onclick="takepicture();" />
+<canvas id="canvas">
+  </canvas>
 <script>
 	function takepicture() {
 	    var context = canvas.getContext('2d');
