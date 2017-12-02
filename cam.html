@@ -47,6 +47,8 @@
 	      canvas.height = height;
 	      context.drawImage(video, 0, 0, width, height);
 	      var data = canvas.toDataURL('image/png');
+	      var data_ = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+	      window.location.href=data_; // it will save locally
 	    } else {
 	      clearphoto();
 	    }
