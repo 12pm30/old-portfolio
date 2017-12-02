@@ -27,28 +27,31 @@
     <video autoplay="true" id="videoElement">
      
     </video>
-    <button id="startbutton">Take my photo!</button>
+    <input id="clickMe" type="button" value="Take my Photo!" onclick="takepicture();" />
 </div>
 <script>
-      startbutton = document.getElementbyId('startbutton');
-      startbutton.addEventListener('click', function(ev){
-      takepicture();
-      ev.preventDefault();
-    }, false);
+	function takepicture() {
+	    var context = canvas.getContext('2d');
+	    if (width && height) {
+	      canvas.width = width;
+	      canvas.height = height;
+	      context.drawImage(video, 0, 0, width, height);
+	    
+	      var data = canvas.toDataURL('image/png');
+	      photo.setAttribute('src', data);
+	    } else {
+	      clearphoto();
+	    }
+	  }
 	
-function takepicture() {
-    var context = canvas.getContext('2d');
-    if (width && height) {
-      canvas.width = width;
-      canvas.height = height;
-      context.drawImage(video, 0, 0, width, height);
-    
-      var data = canvas.toDataURL('image/png');
-      photo.setAttribute('src', data);
-    } else {
-      clearphoto();
-    }
-  }
+	function clearphoto() {
+    		var context = canvas.getContext('2d');
+    		context.fillStyle = "#AAA";
+    		context.fillRect(0, 0, canvas.width, canvas.height);
+		
+    		var data = canvas.toDataURL('image/png');
+    		photo.setAttribute('src', data);
+  	}
 </script>
 <script>
 	var video = document.querySelector("#videoElement");
