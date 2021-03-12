@@ -12,7 +12,7 @@ Release Date:
 =======================================================================
 29 Jan 2016
 
-Author: 
+Original Author: 
 =======================================================================
 Xiaoying Riley at 3rd Wave Media (http://themes.3rdwavemedia.com/)
 
